@@ -1,0 +1,157 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("/static/font/flaticon.eot");
+	src: url("/static/font/flaticon.eot#iefix") format("embedded-opentype"),
+	url("/static/font/flaticon.woff") format("woff"),
+	url("/static/font/flaticon.ttf") format("truetype"),
+	url("/static/font/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-31:before {
+	content: "\e000";
+}
+.flaticon-agreement2:before {
+	content: "\e001";
+}
+.flaticon-arrow395:before {
+	content: "\e002";
+}
+.flaticon-arrow483:before {
+	content: "\e003";
+}
+.flaticon-award52:before {
+	content: "\e004";
+}
+.flaticon-bookmark50:before {
+	content: "\e005";
+}
+.flaticon-businessman57:before {
+	content: "\e006";
+}
+.flaticon-check26:before {
+	content: "\e007";
+}
+.flaticon-clipboard109:before {
+	content: "\e008";
+}
+.flaticon-cross37:before {
+	content: "\e009";
+}
+.flaticon-down100:before {
+	content: "\e00a";
+}
+.flaticon-download195:before {
+	content: "\e00b";
+}
+.flaticon-email5:before {
+	content: "\e00c";
+}
+.flaticon-facebook2:before {
+	content: "\e00d";
+}
+.flaticon-fastforward4:before {
+	content: "\e00e";
+}
+.flaticon-file130:before {
+	content: "\e00f";
+}
+.flaticon-garbage21:before {
+	content: "\e010";
+}
+.flaticon-gear39:before {
+	content: "\e011";
+}
+.flaticon-google-plus:before {
+	content: "\e012";
+}
+.flaticon-info31:before {
+	content: "\e013";
+}
+.flaticon-justice4:before {
+	content: "\e014";
+}
+.flaticon-last-track:before {
+	content: "\e015";
+}
+.flaticon-leftarrow23:before {
+	content: "\e016";
+}
+.flaticon-letter110:before {
+	content: "\e017";
+}
+.flaticon-like82:before {
+	content: "\e018";
+}
+.flaticon-list99:before {
+	content: "\e019";
+}
+.flaticon-loudspeaker24:before {
+	content: "\e01a";
+}
+.flaticon-menu61:before {
+	content: "\e01b";
+}
+.flaticon-open-book1:before {
+	content: "\e01c";
+}
+.flaticon-pencil125:before {
+	content: "\e01d";
+}
+.flaticon-pencils13:before {
+	content: "\e01e";
+}
+.flaticon-plus24:before {
+	content: "\e01f";
+}
+.flaticon-plus79:before {
+	content: "\e020";
+}
+.flaticon-right208:before {
+	content: "\e021";
+}
+.flaticon-schoolboy2:before {
+	content: "\e022";
+}
+.flaticon-skip2:before {
+	content: "\e023";
+}
+.flaticon-superheroe17:before {
+	content: "\e024";
+}
+.flaticon-teacher44:before {
+	content: "\e025";
+}
+.flaticon-thumb-down:before {
+	content: "\e026";
+}
+.flaticon-thumbs26:before {
+	content: "\e027";
+}
+.flaticon-tick1:before {
+	content: "\e028";
+}
+.flaticon-twitter:before {
+	content: "\e029";
+}
+.flaticon-upload143:before {
+	content: "\e02a";
+}
+.flaticon-users6:before {
+	content: "\e02b";
+}
+.flaticon-verify5:before {
+	content: "\e02c";
+}
+.flaticon-winners:before {
+	content: "\e02d";
+}
+.flaticon-world91:before {
+	content: "\e02e";
+}
