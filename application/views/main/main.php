@@ -17,7 +17,7 @@
 </head>
 <body>
 	
-	<header>
+	<header class="bluegra">
 		<h1>
 			<div>
 				<a href="/">
