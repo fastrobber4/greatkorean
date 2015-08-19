@@ -1,0 +1,20 @@
+@charset "utf-8";
+#main section{position: relative; min-height:400px; position:relative;}
+#main section .downarrow{position:absolute; bottom:20px; left:50%; margin-left:-25px; color:#FFF;}
+#main section h2{margin-bottom:30px; font-size:25px; color:#000;}
+#main section[class^="description"] p{font-size:20px; line-height:200%;}
+#main section[class^="description"] span{font-size:15px;}
+#main section[class^="description"] i:before{font-size:60px !important; margin:0; padding-bottom:10px;}
+#main section.description_0{background-color:#00ccff; color:#FFF;}
+#main section.description_1{background-color:#93e9ff; color:#005c73;}
+#main section.description_1 h2{color:#005c73;}
+#main section.description_2{background-color:#00ccff; color:#FFF;}
+#main section.description_2 h2{color:#FFF;}
+#main section.description_3{background-color:#93e9ff; color:#005c73;}
+#main section.description_3 h2{color:#005c73;}
+#main section.description_4{background-color:#00ccff; color:#FFF;}
+#main section.description_4 h2{color:#FFF;}
+#main section.description_4 .topmove a{font-size:16px; color:#FFF;}
+
+
+
