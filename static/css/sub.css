@@ -1,8 +1,12 @@
 @charset "utf-8";
 #main section{position: relative; min-height:400px; position:relative;}
-#main section .downarrow{position:absolute; bottom:20px; left:50%; margin-left:-25px; color:#FFF;}
+#main section .downarrow{position:absolute; bottom:20px; left:50%; margin-left:-25px; color:#0399bf;
+-webkit-transition: color 1s ;
+-o-transition: color 1s ;
+transition: color 1s }
+#main section .downarrow:hover{color:#FFF}
 #main section h2{margin-bottom:30px; font-size:25px; color:#000;}
-#main section[class^="description"] p{font-size:20px; line-height:200%;}
+#main section[class^="description"] p{font-size:18px; line-height:200%;}
 #main section[class^="description"] span{font-size:15px;}
 #main section[class^="description"] i:before{font-size:60px !important; margin:0; padding-bottom:10px;}
 #main section.description_0{background-color:#00ccff; color:#FFF;}
