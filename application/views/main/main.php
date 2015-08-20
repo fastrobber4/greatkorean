@@ -76,7 +76,7 @@
 				</div>
 			</div>
 
-			<a href="" class="downarrow"><i class="flaticon-arrow483"></i></a>
+			<a href="javascript:void(0)" class="downarrow"><i class="flaticon-arrow483"></i></a>
 		</section>
 
 
@@ -91,14 +91,12 @@
 						국민소득 6만불의 덴마크 국회의원은 자전거를 타고 출ㆍ퇴근을 하고, 평균 104건의 법안을 발의 한다.<br /> 
 						또한, 임금은 주급으로 받고 국회 등원과 법안 발의 등... <br /> 
 						일하지 않으면 임금을 받지못하는 덴마크 국회의원 월급은 7백 만원이다.
-						<br />
-						그런데 대한민국 국회의원은.? 고급세단, ..응?
-						
 					</p>
+					<div class="btngroup"><a href="" class="base blue-white transper">자세히보기</a></div>
 				</div>
 			</div>
 
-			<a href="" class="downarrow"><i class="flaticon-arrow483"></i></a>
+			<a href="javascript:void(0)" class="downarrow"><i class="flaticon-arrow483"></i></a>
 		</section>
 
 
@@ -107,9 +105,11 @@
 				<div>
 					<i class="flaticon-superheroe17"></i>
 					<h2>덴마크 vs 대한민국</h2>
+					<p>어떤게 좋아보일까?</p>
+					<div class="btngroup"><a href="" class="base blue-white transper">자세히 보기</a></div>
 				</div>	
 			</div>
-			<a href="" class="downarrow"><i class="flaticon-arrow483"></i></a>
+			<a href="javascript:void(0)" class="downarrow"><i class="flaticon-arrow483"></i></a>
 		</section>
 
 		<section class="description_3">
@@ -122,9 +122,10 @@
 						대한민국의 주권은 국민에게 있고,<br /> 모든 권력은 국민으로부터 나온다.
 						</p>
 					</p>
+					<div class="btngroup"><a href="" class="base blue-white transper">자세히 보기</a></div>
 				</div>	
 			</div>
-			<a href="" class="downarrow"><i class="flaticon-arrow483"></i></a>
+			<a href="javascript:void(0)" class="downarrow"><i class="flaticon-arrow483"></i></a>
 		</section>
 
 
@@ -134,13 +135,14 @@
 				<div>
 					<i class="flaticon-winners"></i>
 					<h2>그래서 시도는 한번 해보자는 겁니다!</h2>
-					<a href="" class="base blue-white">서명하러갑시다</a>
+					<p>되든 안되든!</p>
+					<div class="btngroup"><a href="" class="base blue-white">서명하러갑시다</a></div>
 
 				</div>
 			</div>		
-			<p class="topmove downarrow"><a href="">맨위로</a></p>
+			<p class="topmove downarrow"><a href="javascript:void(0)">맨위로</a></p>
 		</section>
-
+	</div>
 
 	<footer>
 		<nav class="social">
@@ -165,57 +167,46 @@
 		</address>
 
 	</footer>
-
 <script type="text/javascript">
-	(function($){
-		$setPage = {
-			init:function(){
-				$('body,height').animate({
-					scrollTop:"0px"
-				});
-			},
-			sectionSize:function()
-			{
-				//메인페이지 로드시
-				var headHeight = $('header').height();
-				var defHeight = $(window).height();
-				return defHeight - headHeight;
-			},
-			downpage:function(tgf){
-				
-			$('body,html').animate({scrollTop:'+='+tgf});
+	
+	var spot = [];
 
-			}
+	$(window).resize(function(){
 
+		//위치저장
+		
+		spot = [];
+		
+		$('.wrap>section').each(function(i,e){
+			spot.push($(e).offset().top);
+		});	
+
+	});
+	
+	$('.downarrow').click(function(){
+
+		//next sectoni movement
+
+		var idx = $(this).parent().index();
+		var $screen = $('body,html');
+		var elementCheck = $('.wrap>section').eq(idx+1).html();
+
+		
+		if(elementCheck == undefined){
+			$screen.animate({scrollTop:0})
+		}else{
+			$screen.animate({
+				scrollTop:spot[idx+1]
+			});
+	
 		}
 
-	})(jQuery);
 
-	$(window).load(function(){
-		$setPage.init();
-		$(this).trigger('resize');
+
 	});
 
-	$(window).on({
-		resize:function()
-		{
-			$('#main>section').css('height',$setPage.sectionSize());
-		}
-	})
-
-	$('.downarrow').click(function(){
-		$(window).trigger('resize');
-		var tg = $(this).parent().height()
-		$setPage.downpage(tg);
-		
-		return false;
-	})
-
-	$('.topmove').click(function(){
-		$setPage.init();
-	})
-
 </script>
+
 
 </body>
 </html>

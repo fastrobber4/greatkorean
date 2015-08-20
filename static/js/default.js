@@ -1,43 +1,45 @@
+(function($){
 
+	$gnbScript = {
 
-var headerEff ={
-
-	init:function(){
-		$(window).scroll(0);
-		var $head = $('header');
-		this.scrollEv($head);
-	},
-	scrollEv:function(tg){
-		var sct;	
-		$(window).on('scroll',function(){
-			var $body = $('body');
-			sct= $(this).scrollTop();
-
-			if(sct > tg.height() && !tg.is('.small')){
+		headerSpan:function(sct){
+			//탑 이벤트
+			var $header = $('header');
 			
-				tg.addClass('small');
-				tg.find('strong,em').animate({
-					opacity:.4
-				},1000)
-
-			}else if(sct < tg.height() && tg.is('.small')){
-			
-				tg.removeClass('small');
-				tg.find('strong,em').animate({
-					opacity:1
-				},1000)
-				
-
+			if(sct > $header.height() && !$header.is('.open')){
+				$header.addClass('open').stop().animate({height:'40px'})
+				$header.find('strong').fadeOut(100);
+				$header.find('em').stop().animate({fontSize:'-='+13})
+			}else if(sct < $header.height() && $header.is('.open')){
+				$header.removeClass('open').stop().animate({height:'100px'})
+				$header.find('strong').fadeIn(100);
+				$header.find('em').stop().animate({fontSize:'+='+13})
 			}
+		}
 
-		});
-
-		
 	}
-}
+
+
+})(jQuery)
+
+
+$(window).on({
+	scroll:function()
+	{
+		var sct = $(this).scrollTop();
+		$gnbScript.headerSpan(sct)
+
+	}
+});
+
+
+$(window).load(function(){
+
+
+})
 
 $(document).ready(function(){
 
-	headerEff.init()
-
+	$(window).trigger('resize');
+	
 })
