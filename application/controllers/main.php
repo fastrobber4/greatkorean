@@ -13,8 +13,12 @@ class Main extends CI_Controller {
 	}
 
 	public function front()
-	{
+	{	
+
+		$this->load->view('inc/header');
+		$this->load->view('inc/aside');
 		$this->load->view('main/main');
+		$this->load->view('inc/footer');
 	}
 }
 

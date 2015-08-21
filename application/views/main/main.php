@@ -1,71 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Great Korean :: 국회의원 무보수 명예직으로!</title>
 
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	
-	<link rel="stylesheet" href="/static/css/master.css">
-	<link rel="stylesheet" href="/static/css/sub.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="/static/js/default.js"></script>
-
-	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		
-	
-</head>
-<body>
-	
-	<header class="bluegra">
-		<h1>
-			<div>
-				<a href="/">
-
-					<strong>국회의원 무보수 명예직으로</strong>
-					<em>특별법 제정 1000만인 서명운동</em>
-
-				</a>
-			</div>
-		</h1>
-	</header>
-
-	<aside>
-		<nav>
-			<ul>
-				<li><a href="">입법안</a>
-					<ul>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-					</ul>
-				</li>
-				<li><a href="">사법안</a>
-					<ul>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-					</ul>
-				</li>
-				<li><a href="">행정법안</a>
-					<ul>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-						<li><a href="">test menu</a></li>
-					</ul>	
-				</li>
-				<li><a href="">국민의생각</a></li>
-				<li><a href="">서명운동</a></li>
-			</ul>
-		</nav>
-	</aside>
 	
 	<div class="wrap" id="main">
-		
-
 		<section class="description_0">
 			<div class="middle-wrap">
 				<div>
@@ -87,7 +22,6 @@
 					<i class="flaticon-teacher44"></i>
 					<h2>국회의원 무보수란</h2>
 					<p>
-						
 						국민소득 6만불의 덴마크 국회의원은 자전거를 타고 출ㆍ퇴근을 하고, 평균 104건의 법안을 발의 한다.<br /> 
 						또한, 임금은 주급으로 받고 국회 등원과 법안 발의 등... <br /> 
 						일하지 않으면 임금을 받지못하는 덴마크 국회의원 월급은 7백 만원이다.
@@ -111,7 +45,6 @@
 			</div>
 			<a href="javascript:void(0)" class="downarrow"><i class="flaticon-arrow483"></i></a>
 		</section>
-
 		<section class="description_3">
 			<div class="middle-wrap">
 				<div>
@@ -130,43 +63,20 @@
 
 
 		<section class="description_4">
-			
 			<div class="middle-wrap">
 				<div>
 					<i class="flaticon-winners"></i>
 					<h2>그래서 시도는 한번 해보자는 겁니다!</h2>
 					<p>되든 안되든!</p>
-					<div class="btngroup"><a href="" class="base blue-white">서명하러갑시다</a></div>
-
+					<div class="btngroup"><a href="/index.php/sign/index" class="base blue-white">서명하러갑시다</a></div>
 				</div>
 			</div>		
 			<p class="topmove downarrow"><a href="javascript:void(0)">맨위로</a></p>
 		</section>
-	</div>
 
-	<footer>
-		<nav class="social">
-			<ul>
-				<li><a href="" title="트위터"><i class="flaticon-twitter"></i></a></li>
-				<li><a href="" title="페이스북"><i class="flaticon-facebook2"></i></a></li>
-				<li><a href="" title="구글+"><i class="flaticon-google-plus"></i></a></li>
-				<li><a href="" title="담당자 이메일"><i class="flaticon-email5"></i></a></li>
-			</ul>
-		</nav>
+	
 
-		<address>
-			<p>
-				공정하고 객관적인 비판을 통해서 사회에 귀감이 되며, 청렴한 대한국민의 미래를 위한,<br /> 
-				세계 1등 국가와 1등 국민으로 가는길...! '대한국인' 사이트는 상업 광고를 싣지않습니다. 대표 : 최경식
-			</p>
-			
-			<span>COPYRIGHT&copy; 1996-2015 ALL RIGHTS RESERVED </span>
-
-			<div class="made_by">Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/appzgear" title="Appzgear">Appzgear</a>, <a href="http://www.flaticon.com/authors/egor-rumyantsev" title="Egor Rumyantsev">Egor Rumyantsev</a>, <a href="http://www.flaticon.com/authors/nice-and-serious" title="Nice and Serious">Nice and Serious</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
-
-		</address>
-
-	</footer>
+	
 <script type="text/javascript">
 	
 	var spot = [];
@@ -174,7 +84,7 @@
 	$(window).resize(function(){
 
 		//위치저장
-		
+
 		spot = [];
 		
 		$('.wrap>section').each(function(i,e){
@@ -193,20 +103,13 @@
 
 		
 		if(elementCheck == undefined){
-			$screen.animate({scrollTop:0})
+			$screen.animate({scrollTop:0});
 		}else{
 			$screen.animate({
 				scrollTop:spot[idx+1]
 			});
-	
 		}
-
-
-
 	});
-
 </script>
 
 
-</body>
-</html>

@@ -4,19 +4,26 @@
 *{margin:0; padding:0;}
 ul,ol{list-style:none;}
 body,html{width: 100%; height: 100%;}
-body{font-family: 'Nanum Gothic', sans-serif; letter-spacing: -0.05em}
+body{font-family: 'Nanum Gothic', sans-serif; letter-spacing: -0.05em; position:relative;}
 a{text-decoration: none;}
 em{font-style:normal}
 
 /*layout*/
-aside{display:none;}
 
-header{border-bottom:1px #0046ae solid; height:100px; width:100%; background:#1465df; position:fixed; top:0; left:0; z-index:10; line-height:200%; box-shadow: 0 0 5px #000}
+header{border-bottom:1px #0046ae solid; height:130px; width:100%; background:#1465df; position:fixed; top:0; left:0; z-index:10; line-height:200%; box-shadow: 0 0 5px #000}
 header h1{display: table; width:100%; height:100%; font-weight:400;}
 header h1 div {display: table-cell; text-align:center; vertical-align: middle; height:100%;}
 header h1 div a{color:#FFF;}
 header h1 div strong{font-size:24px; display:block;}
 header h1 div em{font-size:30px;}
+header .menubtn{border:0; background: none; color:#FFF; position: absolute; right:2.013422818791946%; top:50%; margin-top:-15px}
+header .menubtn:hover{color:#CCC;}
+header .menubtn:before{font-size:30px;}
+
+.leftmenu{position:fixed; width:200px; height:100%; background:#bfeaff; top:0; right:-200px; z-index:10; }
+.leftmenu nav{border-left:1px #FFF solid; padding:0 10px; height:100%;}
+.leftmenu nav>ul ul{margin:10px 0;}
+.leftmenu nav>ul a{ color:#000;}
 
 footer{padding:30px;  border-top:1px #000 solid;  background:#737373; color:#FFF; letter-spacing: 0}
 footer .made_by {color:#999;}
@@ -58,7 +65,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', end
 }
 
 /*content*/
-div.wrap{height:100%}
+div.wrap{height:100%;}
 div.wrap section{height:100%;}
 div.wrap section{padding:0 90px;}
 
